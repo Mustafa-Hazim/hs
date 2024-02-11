@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الأحاديث الشريفة عن رسول الله محمد صلى الله عليه وسلم</title>
+
+    <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">الأحاديث الصحيحة</div>
+        <ul class="list">
+            <li class="nav-item"><a href="./list.html" class="nav-link">الفهرس</a></li>
+        </ul>
+    </nav>
+    <div class="parts">
+        <h2>الفهرس</h2>
+        <p>ملاحظة : يمكنك الضغط على أي الأقسام للتنقل إليها
+            <br>
+            هذا الموقع مصنف الى : <br>الجزء 
+            <br> ضمنه المقصد
+            <br>ضمنه الكتاب
+            <br>ضمنه الفصل
+            <br>ضمنه الموضوعات
+            <br>داخل الموضوعات الأحاديث الشريفة
+
+        </p>
+        <!-- 
+
+            eact part has id of partpartnumber class of part to get in toggler 
+            n = id
+            and has a nested div with id section and the part number like section1
+            this section has n this n = part id
+        -->
+
+        <div class="part" onclick="toggleSectionPart(1)">
+            <h3 class="none-select pointer partName">الجزء الأول : العقيدة ، العلم</h3>
+            <div id="sectionPart1" style="display: none;">
+                <div class="maqased">
+                    <div class="maqsed"> 
+                        <h4>المقصد الأول : العقيدة</h4>
+                        <div class="books" >
+                            <div class="book">
+                                <h5 ><a class="bookName" href="./book.html?id=1">الكتاب الأول : الإسلام والإيمان</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=2">الكتاب الثاني : الإيمان باليوم الآخر</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=3">الكتاب الثالث : الإيمان بالقدر</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maqsed"> 
+                        <h4>المقصد الثاني : العلم ومصادره</h4>
+                        <div class="books" >
+                            <div class="book">
+                                <h5 ><a class="bookName" href="./book.html?id=4">الكتاب الأول : العلم</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=5">الكتاب الثاني : جمع القرآن وفضائله</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=6">الكتاب الثالث : التفسير</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=7">الكتاب الرابع : الاعتصام بالسنة</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="part" onclick="toggleSectionPart(2)">
+            <h3 class="none-select pointer partName">الجزء الثاني : العبادات ، الصلاة</h3>
+            <div id="sectionPart2" style="display: none;">
+                <div class="maqased">
+                    <div class="maqsed"> 
+                        <h4>المقصد الثالث : العبادات</h4>
+                        <div class="books" >
+                            <div class="book">
+                                <h5 ><a class="bookName" href="./book.html?id=8">الكتاب الأول : الطهارة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=9">الكتاب الثاني : الأذان ومواقيت الصلاة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=10">الكتاب الثالث : المساجد ومواضع الصلاة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=11">الكتاب الرابع : فضل الصلاة وصفتها</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=12">الكتاب الخامس : صلاة التطوع والوتر</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=13">الكتاب السادس : الإمامة والجماعة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=14">الكتاب السابع : صلاة الجمعة والعيدين والكسوف والاستسقاء والخوف</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=15">الكتاب الثامن : قصر الصلاة وجمعها وأحكام السفر</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=16">الكتاب التاسع : الجنائز</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part" onclick="toggleSectionPart(3)">
+            <h3 class="none-select pointer partName">الجزء الثالث : بقية العبادات  ، الزكاة  </h3>
+            <div id="sectionPart3" style="display: none;">
+                <div class="maqased">
+                    <div class="maqsed"> 
+                        <h4>المقصد الثالث : العبادات</h4>
+                        <div class="books" >
+                            <div class="book">
+                                <h5 ><a class="bookName" href="./book.html?id=17">الكتاب العاشر : الزكاة والصدقات</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=18">الكتاب الحادي عشر : الصوم</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=19">الكتاب الثاني عشر : الحج والعمرة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=20">الكتاب الثالث عشر : الجهاد في سبيل الله</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=21">الكتاب الرابع عشر : الذكر والدعاء والتوبة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=22">الكتاب الخامس عشر : الأيمان والنذور</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="part" onclick="toggleSectionPart(4)">
+            <h3 class="none-select pointer partName">الجزء الرابع : الأسرة ، الحاجات ، المعاملات  </h3>
+            <div id="sectionPart4" style="display: none;">
+                <div class="maqased">
+                    <div class="maqsed"> 
+                        <h4>المقصد الرابع : أحكام الأسرة</h4>
+                        <div class="books" >
+                            <div class="book">
+                                <h5 ><a class="bookName" href="./book.html?id=23">الكتاب الأول : النكاح</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=24">الكتاب الثاني : الرضاع</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=25">الكتاب الثالث : الطلاق وأحكام مفارقة الزوجة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=26">الكتاب الرابع : أحكام المولود</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=27">الكتاب الخامس : الميراث والوصايا</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=28">الكتاب السادس : البر والصلة بين أفراد الأسرة</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maqsed"> 
+                        <h4>المقصد الخامس : الحاجات الضرورية</h4>
+                        <div class="books" >
+                            <div class="book">
+                                <h5 ><a class="bookName" href="./book.html?id=29">الكتاب الأول : الطعام والشراب</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=30">الكتاب الثاني : اللباس والزينة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=31">الكتاب الثالث : الطب والرؤيا</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=32">الكتاب الرابع : ما جاء في البيوت</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=33">الكتاب الخامس : الحاجات الأساسية لا يمتلكها الأفراد</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="maqsed"> 
+                        <h4>المقصد السادس : المعاملات</h4>
+                        <div class="books" >
+                            <div class="book">
+                                <h5 ><a class="bookName" href="./book.html?id=34">الكتاب الأول : البيوع</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=35">الكتاب الثاني : القرض والحوالة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=36">الكتاب الثالث : المزارعة والإجارة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=37">الكتاب الرابع : الهبات واللقطة</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=38">الكتاب الخامس : المظالم والغصب</a></h5>
+                                <h5 ><a class="bookName" href="./book.html?id=39">الكتاب الخامس : العتق والمكاتبة</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- للعمل الجزء الخامس والسادس نسخ من الأعلى الى هنا -->
+
+    </div>
+
+    <script>
+
+const toggleSectionPart = (id) => {
+    const section = document.getElementById('sectionPart'+id)
+    section.style.display === 'block' ? section.style.display = 'none' : section.style.display = 'block'
+}
+
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>
