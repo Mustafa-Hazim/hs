@@ -4,6 +4,13 @@ const bookId = urlParams.get('id')
 const script = document.createElement('script')
 script.src = `./scripts/${bookId}.js`
 
+const arr = []
+for (let i = 1; i < 207; i++) {
+    arr.push({book: 1, hs: i})
+}
+
+console.log(arr)
+
 document.head.appendChild(script) 
 
 script.onload = () => {
@@ -38,6 +45,7 @@ script.onload = () => {
                     // hs number: 
                     const hsNumber = document.createElement('div')
                     hsNumber.textContent = `#  ${has.numberInSite}`
+                    hsNumber.id = 'hs'+has.numberInSite
                     hsNumber.className = 'hs-number'
                     hs.appendChild(hsNumber)
                     // hs content:

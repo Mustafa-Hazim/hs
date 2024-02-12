@@ -112,3 +112,7 @@ html, body {
   color: grey;
   font-size: 16px;
 }
+
+.navigate-container {
+	text-align: center;
+}
